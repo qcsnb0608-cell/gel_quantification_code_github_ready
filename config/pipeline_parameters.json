@@ -1,0 +1,28 @@
+{
+  "description": "Configuration for the gel-image feature extraction and quantitative prediction workflow.",
+  "lane_segmentation_model": "models/lane_segmentation/best.pt",
+  "band_detection_model": "models/band_detection/best.pt",
+  "feature_extraction_pipeline": "src/yolo_gel_pipeline.py",
+  "component_feature_extractor": "src/gel_feature_extractor.py",
+  "batch_runner": "run_batch_feature_extraction.py",
+  "default_inference_parameters": {
+    "imgsz": 1024,
+    "lane_conf": 0.05,
+    "band_conf": 0.1,
+    "iou": 0.5,
+    "lane_max_det": 50,
+    "band_max_det": 100,
+    "fixed_lane_count": 15
+  },
+  "primary_output_features": {
+    "IOD_gray_hyst": "Integrated gray-channel signal after local hysteresis mask refinement.",
+    "log_IOD_gray_hyst": "Natural logarithm of one plus IOD_gray_hyst.",
+    "log_area_gray_hyst_px": "Natural logarithm of one plus the gray-channel refined mask area."
+  },
+  "repository_contents": {
+    "src": "Python source code for lane segmentation, band detection, feature extraction, and optional quantitative prediction.",
+    "models": "Trained model weights required for reproducing inference.",
+    "data": "Empty input directories for user-supplied gel images or zip archives.",
+    "config": "Workflow parameters and file locations."
+  }
+}

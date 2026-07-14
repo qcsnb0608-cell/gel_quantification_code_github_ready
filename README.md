@@ -1,5 +1,3 @@
-# gel_quantification_code_github_ready
-Code and example data for gel_quantification image analysis .
 # Gel Image Band Quantification Workflow
 
 This repository provides the code and trained model files used for gel-image lane detection, band detection, band-region refinement, feature extraction, and optional regression-based concentration prediction. It is intended for manuscript-associated code release and reproducible analysis.
@@ -107,7 +105,7 @@ Use Python 3.10 or later. From the repository root, install dependencies with:
 pip install -r requirements.txt
 ```
 
-The workflow requires PyTorch, torchvision, and ultralytics in the same Python environment. GPU acceleration can be used when the installed PyTorch environment supports it, but the scripts can also run on CPU.
+The workflow requires PyTorch, torchvision, and ultralytics in the same Python environment. This release pins `ultralytics==8.4.36`, the version used to load and verify the released YOLO26 model files, and `scikit-learn==1.8.0`, the version recorded in the released regression models. GPU acceleration can be used when the installed PyTorch environment supports it, but the scripts can also run on CPU.
 
 ## Input preparation
 
@@ -273,7 +271,7 @@ This script is independent of the detection workflow. It uses a completed featur
 
 ## Reproducibility notes
 
-The released model files in `models/lane_segmentation/` and `models/band_detection/` are required to reproduce the detection-based feature extraction results. The default inference parameters are listed in `config/pipeline_parameters.json` and in the command-line defaults of `run_batch_feature_extraction.py`. For manuscript-associated use, report the Python version, package versions, model files, input image preprocessing, command-line parameters, and generated output tables.
+The released model files in `models/lane_segmentation/` and `models/band_detection/` are required to reproduce the detection-based feature extraction results. They were re-serialized with Ultralytics 8.4.36 to remove optimizer state and machine-specific training-path metadata; predictions on all ten included example images were verified to be identical to the source checkpoints. The default inference parameters are listed in `config/pipeline_parameters.json` and in the command-line defaults of `run_batch_feature_extraction.py`. For manuscript-associated use, report the Python version, package versions, model files, input image preprocessing, command-line parameters, and generated output tables.
 
 ## Data note
 

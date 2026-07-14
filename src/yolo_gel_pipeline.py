@@ -8,38 +8,6 @@ from typing import Dict, List, Tuple
 import cv2
 import numpy as np
 import pandas as pd
-import torch
-_orig_register_fake = torch.library.register_fake
-
-def _safe_register_fake(op, *args, **kwargs):
-
-    def deco(fn):
-        try:
-            return _orig_register_fake(op, *args, **kwargs)(fn)
-        except Exception:
-            return fn
-    return deco
-torch.library.register_fake = _safe_register_fake
-try:
-    import ultralytics.nn.modules.head as _uhead
-    if not hasattr(_uhead, 'Segment26') and hasattr(_uhead, 'Segment'):
-        _uhead.Segment26 = _uhead.Segment
-    if not hasattr(_uhead, 'Detect26') and hasattr(_uhead, 'Detect'):
-        _uhead.Detect26 = _uhead.Detect
-    if not hasattr(_uhead, 'Pose26') and hasattr(_uhead, 'Pose'):
-        _uhead.Pose26 = _uhead.Pose
-    if not hasattr(_uhead, 'OBB26') and hasattr(_uhead, 'OBB'):
-        _uhead.OBB26 = _uhead.OBB
-except Exception:
-    pass
-try:
-    import ultralytics.nn.modules.block as _ublock
-    if not hasattr(_ublock, 'Proto26') and hasattr(_ublock, 'Proto'):
-        _ublock.Proto26 = _ublock.Proto
-    if not hasattr(_ublock, 'DFL26') and hasattr(_ublock, 'DFL'):
-        _ublock.DFL26 = _ublock.DFL
-except Exception:
-    pass
 from ultralytics import YOLO
 import importlib.util
 import joblib

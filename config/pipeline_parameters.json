@@ -22,7 +22,7 @@
   "repository_contents": {
     "src": "Python source code for lane segmentation, band detection, feature extraction, and optional quantitative prediction.",
     "models": "Trained model weights required for reproducing inference.",
-    "data": "Empty input directories for user-supplied gel images or zip archives.",
+    "data": "Ten example gel images plus an empty folder for optional user-supplied zip archives.",
     "config": "Workflow parameters and file locations."
   }
 }

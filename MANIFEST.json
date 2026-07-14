@@ -1,0 +1,130 @@
+{
+  "hash_algorithm": "SHA-256",
+  "files": [
+    {
+      "path": ".gitignore",
+      "size_bytes": 177,
+      "sha256": "f07ec7b67cb338ce077fe22de7c8ec315fa051016dadd0f190ea1068857590f7"
+    },
+    {
+      "path": "LICENSE",
+      "size_bytes": 1123,
+      "sha256": "75ef7b0c9cb2038afcf1f43655f3983251b83f1aa62736ef7525b656a9bbb0cc"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 14113,
+      "sha256": "6f4d569390ffe570d06a56ba96d4f409b50d51cad47ba13e576bf54a402f840f"
+    },
+    {
+      "path": "config/pipeline_parameters.json",
+      "size_bytes": 1306,
+      "sha256": "5325f771f65794f44edebb1e865414e0889d5e1dc92e5dc6be5a3b655b3f0e9c"
+    },
+    {
+      "path": "data/input_images/1.png",
+      "size_bytes": 1908395,
+      "sha256": "dadaf933c2edd1a380b7aac08029e81e45c9ea9a9001b139a55d5278d97940ee"
+    },
+    {
+      "path": "data/input_images/10.png",
+      "size_bytes": 816237,
+      "sha256": "84c555b084593d0bdd69e8099d89596e2fbbb3a85b45061e2e136a77c38337e1"
+    },
+    {
+      "path": "data/input_images/2.png",
+      "size_bytes": 1899972,
+      "sha256": "b742a02f5385383cdc4f19740029da2f1a155e2b09e7f494d7a7205961dbe8dc"
+    },
+    {
+      "path": "data/input_images/3.png",
+      "size_bytes": 920778,
+      "sha256": "5b3a146adfb3a92ba95bd8a254b432542f0d4cf5df73bb2e86bc5e30ccd22daf"
+    },
+    {
+      "path": "data/input_images/4.png",
+      "size_bytes": 1138473,
+      "sha256": "b14925b72d0f1ccd6bed27753cee40105c353e92ea3312e0c9cbab3e2c1e75b5"
+    },
+    {
+      "path": "data/input_images/5.png",
+      "size_bytes": 1114686,
+      "sha256": "3630623969a5d2fc9d33721fa33e8063017fc11fe519f1a6c33e488c75bff603"
+    },
+    {
+      "path": "data/input_images/6.png",
+      "size_bytes": 608939,
+      "sha256": "4f090a5cfb7be2c1b729196cf776b68fcc070c57f59f8f347ca49db80e0e4262"
+    },
+    {
+      "path": "data/input_images/7.png",
+      "size_bytes": 4034978,
+      "sha256": "11ed4afc9b8428e4c9f2b6b6aa36ea86476c831756efd7aac29ca5ba7d4ad2ef"
+    },
+    {
+      "path": "data/input_images/8.png",
+      "size_bytes": 3688609,
+      "sha256": "98e14db8084ff8b314005f10596414124e049a96368e5f75618d9c9f142766bd"
+    },
+    {
+      "path": "data/input_images/9.png",
+      "size_bytes": 1421960,
+      "sha256": "16833f9a5aaa8716ff3e4e5c51912448ec5f741695707d005de6a3c291425486"
+    },
+    {
+      "path": "data/input_zips/.gitkeep",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "models/band_detection/best.pt",
+      "size_bytes": 5444037,
+      "sha256": "2785676e418cc5703efea2beae36abc65fd9512b60e857aa06e235b6ae022662"
+    },
+    {
+      "path": "models/lane_segmentation/best.pt",
+      "size_bytes": 6583133,
+      "sha256": "7959cec5e66aac29950d306cd9d5170f0bf1f8dab680b9f182ec41d72ffc3e5e"
+    },
+    {
+      "path": "models/quantitative_regression/high_signal_model.joblib",
+      "size_bytes": 22128,
+      "sha256": "5e33d00f3f9c17de466b4688e6c842313943dcc4007fbd063fb66dffa9a18fa5"
+    },
+    {
+      "path": "models/quantitative_regression/low_signal_model.joblib",
+      "size_bytes": 457793,
+      "sha256": "36cb907c097d62dbbd52baf6511f3f27f9fc89a2c19167680344c10cf5017810"
+    },
+    {
+      "path": "requirements.txt",
+      "size_bytes": 109,
+      "sha256": "bcba934e3013cd313d0c4e55a066672400d8118d7c8ef288af597bfd52a3f4dc"
+    },
+    {
+      "path": "run_batch_feature_extraction.py",
+      "size_bytes": 11937,
+      "sha256": "16224e6b21959c41dbdfce7271362f27ac0c4f85dc87dc85141a2df51064ab8e"
+    },
+    {
+      "path": "run_windows.bat",
+      "size_bytes": 190,
+      "sha256": "31eb3005433f82ae0f9f338cfb99d8860d71fb8716b842b8ad3116c4d8a62ec5"
+    },
+    {
+      "path": "src/gel_feature_extractor.py",
+      "size_bytes": 22627,
+      "sha256": "5dc6c3fce94fcbb83f4f21556a1957b5d7d4dd59a245b91ddef1c647fda3aef4"
+    },
+    {
+      "path": "src/quantitative_prediction.py",
+      "size_bytes": 4718,
+      "sha256": "81606859c6b9abac3591f88ed21ba22a0f969dfa2bc8bea65da4725d6f9194ce"
+    },
+    {
+      "path": "src/yolo_gel_pipeline.py",
+      "size_bytes": 15153,
+      "sha256": "849edb373244d1c8d86ed568824e178836717c4b75abb11449c955d1a290b559"
+    }
+  ]
+}

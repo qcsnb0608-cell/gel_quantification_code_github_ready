@@ -6,5 +6,5 @@ matplotlib
 joblib
 torch
 torchvision
-ultralytics==8.4.35
+ultralytics==8.4.36
 scikit-learn==1.8.0
